@@ -92,8 +92,14 @@ int main(){
   }
   myfile1.close();
 
-  
+  vector < vector <int>> matriz_1 = texto_matriz("input1.txt");
+  mostrar_matriz(matriz_1);
 
+  vector < vector <int>> matriz_2 = texto_matriz("input2.txt");
+  mostrar_matriz(matriz_2);
+
+  vector < vector <int>> matriz_final = sumar(matriz_1,matriz_2);
+  mostrar_matriz(matriz_final);
   return 0;
 
 }
